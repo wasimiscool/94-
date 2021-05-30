@@ -1,0 +1,45 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbird | #Rooms</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" href="https://media-public.canva.com/aaNME/MADVn2aaNME/2/tl.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+</head>
+
+<body>
+    <div class="logoutDiv">
+        <button id="logout" class="btn btn-danger" style="float: right;" onclick="logout()"><span
+                class="glyphicon glyphicon-log-out"></span> Logout</button>
+    </div><center>
+    <img src="logo.png" id="logoImg" class="img-responsive"></center>
+    <h1 class="header">
+        Chat Bird<sup>
+            <img id="msgImg" src="m2.png">
+        </sup>
+    </h1>
+    <h3>
+        <span>Welcome </span>
+    </h3>
+    <div id="roomDiv">
+        <center>
+            <label>Room Name</label>
+            <input type="text" class="form-control" placeholder="#RoomName" id="roomName">
+            <br>
+            <button onclick="addRoom()" class="btn btn-primary">Add Room <b>+</b></button>
+        </center>
+    </div>
+    <center>
+        <div id="output"></div>
+    </center>
+<script async src="https://drv.tw/inc/wd.js"></script></body>
+<script src="room.js"></script>
+
+</html>
